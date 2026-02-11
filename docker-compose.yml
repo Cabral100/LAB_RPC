@@ -12,5 +12,7 @@ services:
       context: .
       dockerfile: Dockerfile_cliente
     container_name: cliente
+    ports:
+      - 8000:8000
     depends_on:
       - servidor
